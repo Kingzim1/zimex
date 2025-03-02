@@ -4,10 +4,10 @@
  */
 async function connect() {
   // Check if Metamask is installed in the user's browser
-  if (typeof window.ethereum !== 'eth') {
+  if (typeof window.polygon !== 'undefined') {
     try {
-      // Add the Polygon network to Metamask (you can replace this with another network if desired)
-      await addPolygonNetwork();
+      // Add the Ethereum network to Metamask (you can replace this with another network if desired)
+      await addEthereumNetwork();
       // Request access to the user's Metamask account
       await requestAccountAccess();
       // Get the current account from Metamask and display an alert message with the account address
