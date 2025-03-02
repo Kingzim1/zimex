@@ -4,7 +4,7 @@
  */
 async function connect() {
   // Check if Metamask is installed in the user's browser
-  if (typeof window.ethereum !== 'undefined') {
+  if (typeof window.ethereum !== 'eth') {
     try {
       // Add the Polygon network to Metamask (you can replace this with another network if desired)
       await addPolygonNetwork();
