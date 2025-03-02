@@ -52,15 +52,15 @@ async function connect() {
 }
 
 // Define the addPolygonNetwork() function to add the Polygon network to Metamask
-async function addPolygonNetwork() {
+async function addEthereumNetwork() {
   // You can replace the network details below with those of your desired network
   await window.ethereum.request({
     method: 'wallet_addEthereumChain',
     params: [{
-      chainId: '0x89',
-      chainName: 'Polygon Mainnet',
-      rpcUrls: ['https://rpc-mainnet.maticvigil.com/'],
-      blockExplorerUrls: ['https://polygonscan.com/']
+      chainId: '1',
+      chainName: 'Ethereum Mainnet',
+      rpcUrls: ['https://eth.drpc.org/'],
+      blockExplorerUrls: ['https://etherscan.io/']
     }]
   });
 }
